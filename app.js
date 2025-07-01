@@ -2,6 +2,9 @@
     const app = express();
     const port = 3000; // You can choose any available port
 
+    app.get('/', (req, res) => {
+      res.send('Dadlaga 1');
+    });
     
     app.get('/sayhi', (req, res) => {
       console.log(req.query)
